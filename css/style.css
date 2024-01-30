@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* 課題07のCSS
+========================================================================== */
+body {
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+    position: relative;
+}
+
+/* 問題01 */
+section:first-child a::after {
+    content: url(/images/g24.svg);
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+section:first-child a {
+    color: #0085FF;
+}
+
+/* 問題02 */
+li {
+    border-top: 1px solid #333;
+    padding: 0.7rem;
+}
+
+li:last-child {
+    border-bottom: 1px solid #333;
+}
+
+ul li:before {
+    content: url(/images/ifn0769\ 1.svg);
+    display: inline-block;
+    height: auto;
+    width: 20px;
+    position: relative;
+    top: 2px;
+}
+
+li:hover {
+    background-color: black;
+    color: white;
+}
+
+/* 問題03 */
+.question03::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 30%;
+    height: 100%;
+    left: 0;
+    background: #CCC;
+}
+
+.question03 p {
+    position: relative;
+    padding: 10px 0px 10px 150px;
+}
